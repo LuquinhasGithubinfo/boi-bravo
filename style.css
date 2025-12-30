@@ -85,5 +85,33 @@ footer {
   color: #aaa;
   text-align: center;
   padding: 2rem 1rem;
+  .scroll-down {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 14px;
+  border-radius: 50%;
+  color: white;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(8px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(4px);
+  }
+}
+
   font-size: 0.9rem;
 }
+
